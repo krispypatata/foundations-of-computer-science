@@ -1,4 +1,4 @@
-[BACKUP] <br />
+**[BACKUP]** <br />
 CMSC 12 - Foundations of Computer Science
 
 Gabinete, Keith Ginoel S. <br />

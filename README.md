@@ -1,5 +1,5 @@
 [BACKUP] <br />
-CMSC 12 - Introduction to Artificial Intelligence
+CMSC 12 - Foundations of Computer Science
 
 Gabinete, Keith Ginoel S. <br />
 BS Computer Science <br />

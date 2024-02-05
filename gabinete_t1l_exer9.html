@@ -1,0 +1,108 @@
+<!--
+EXER 09
+Keith Ginoel Gabinete
+2020-03670
+BS CS
+--->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!--The is the text in the browser's tab--->
+		<title>Green Witch Pizza</title>
+
+		<!--Use an external style sheet-->
+		<link rel="stylesheet" type="text/css" href="gabinete_t1l_exer9.css">
+
+	</head>
+	
+	<body>
+		<!--Display the name of the pizza's franchise-->
+		<h1>Green Witch Delivery</h1>
+
+		<!--Make the contents of the website be in a form so we can assign fieldsets that would group particular sets of data-->
+		<form>
+			<!--Assign a fieldset for Customer Details-->
+			<fieldset id="cus_details">
+				<legend>Customer Details</legend>
+				<br/>
+				<!--Add text boxes that would ask for the user's input-->
+				<!--Text box for customer's name-->
+				<label for="cus_name" id="customer"> Customer name:</label><input type="text" name="cutomer name" id="cus_name" required/>
+					<br/><br/>
+
+				<!--Text box for customer's mobile number-->
+				<label for="cus_number"> Mobile number:</label><input type="tel" name="mobile number" id="cus_number" pattern="[0-9]{11}"  placeholder="must be 11 digit numbers" maxlength="11" required/>
+					<br/><br/>
+
+				<!--Add an email input-type element for the customer's email address-->
+				<label for="cus_email"> E-mail address:</label><input type="email" name ="e-mail address" id="cus_email" required/>
+					<br/><br/>
+			</fieldset>
+		
+			<!--Assign a fieldset for Pizza options-->
+			<fieldset id="pizza_options">
+				<legend>Pizza Options</legend>
+				<br/>
+
+				<!--Make a dropdown list of choices to ask the user for the pizza's flavor-->
+				<label id="text_flavor">Flavor:</label>
+					<select name="flavor" id="flavor" required>
+						<option value="hawaiian">Hawaiian</option>
+						<option value="double cheese">Double Cheese</option>
+						<option value="margherita">Margherita</option>
+						<option value="barbecue bacon cheeseburger">Barbecue Bacon Cheeseburger</option>
+						<option value="pepperoni and cheese">Pepperoni and Cheese</option>
+					</select>
+						<br/><br/>
+
+				<!--Ask the user for the size of the pizza using a radio element-->
+				<label id="text_size">Size:</label> <br/> 
+					<input type="radio" name="size" id="size_small" value="small" required/><label for="size_small"> Small </label>
+					<input type="radio" name="size" id="size_medium" value="medium" required/><label for="size_medium"> Medium </label>
+					<input type="radio" name="size" id="size_large" value="large" required/><label for="size_large"> Large </label>
+						<br/><br/>
+
+				<!--Make checkboxes to ask the user for the extra toppings of the ordered pizza-->
+				<label id="text_extraToppings">Extra Toppings:</label> <br/>
+					<!--Checkbox for the extra toppings - bacon-->
+					<input type="checkbox" name="toppings" id="toppings_bacon" value="bacon" /><label for="toppings_bacon"> Bacon </label>
+
+					<!--Checkbox for the extra toppings - cheese-->
+					<input type="checkbox" name="toppings" id="toppings_cheese" value="cheese" /><label for="toppings_cheese"> Cheese </label>
+
+					<!--Checkbox for the extra toppings - onion-->
+					<input type="checkbox" name="toppings" id="toppings_onion" value="onion" /><label for="toppings_onion"> Onion </label>
+
+					<!--Checkbox for the extra toppings - mushroom-->
+					<input type="checkbox" name="toppings" id="toppings_mushroom" value="mushroom" /><label for="toppings_mushroom"> Mushroom </label>
+						<br/><br/>
+			</fieldset>
+
+			<!--Assign a fieldset for Delivery details-->
+			<fieldset id="delivery_details">
+				<legend>Delivery Details</legend>
+				<br/>
+
+				<!--Ask the user for the delivery date using the date html element-->
+				<label for="date">Delivery date:</label><input type="date" name="delivery date" id="date" required/>
+					<br/><br/>
+
+				<!--Ask the user for the delivery date using the time html element-->
+				<label for="time">Preferred delivery time:</label>
+				<input type="time" name="preferred delivery time" id="time" required/>
+					<br/><br/>
+				<!--Make a text area where the user can write his/her home address-->
+				<label for="cus_address"> Delivery address:</label> 
+					<br/>
+				<textarea name="delivery address" rows="10" cols="50" required id="cus_address"></textarea>
+			</fieldset>
+
+			<!--Add buttons to reset the form or submit the data gathered from the form-->
+			<button type="reset" id="reset_button">Reset</button>
+			<button type="submit" class="submit_button">Submit Order</button>
+
+		</form>
+	</body>
+</html>

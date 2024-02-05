@@ -1,0 +1,162 @@
+/*
+EXER 10
+Keith Ginoel Gabinete
+2020-03670
+BS CS
+*/
+
+body {
+	/* Loads up an image from the world wide web and sets it up as the default background for the whole web project*/
+	background-image: url(https://www.wallpapertip.com/wmimgs/76-769381_background-for-pizza-website.jpg);
+}
+
+
+h1 {
+	/* Changes the color of the text "Green Witch Delivery" to green*/
+	color: lightgreen;
+
+	/* Adds Stroke/outline to the previously said text */
+	-webkit-text-stroke: 1px black;
+
+	/* Aligns the text in the center*/
+	text-align: center;
+
+	/* Changes the upper and lower part margins of the text*/
+	margin-top: 50px;
+	margin-bottom: 10px;
+
+	/* Changes the font design of the text */
+	font-size: 100px;
+	font-family: Brush Script MT;
+}
+
+
+form {
+	/* Changes the margin of the form */
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 100px;
+
+	/* Changes the form's background color to something comparable to a wood*/
+	background-color: burlywood;
+
+	/* Adds a black border that encloses the form */
+	border: solid;
+	border-color: black;
+}
+
+
+fieldset {
+	/* Sets the margin of each fieldset inside the form to 50 pixels*/
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+
+	/* Changes the font size of all texts inside each fieldset*/
+	font-size: 20px;
+}
+
+
+legend {
+	/*Changes the color of texts (legends) to orange*/
+	color: orange;
+
+	/* Makes the texts (legends) be written in uppercase letters */
+	text-transform: uppercase;
+
+	/* Adds Stroke/outline to texts (legends) */
+	-webkit-text-stroke: 1px black;
+
+	/* Changes the Font design*/
+	font-family: Georgia;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+
+#cus_details label {
+	/* Indents the texts inside the Customer Details fieldset */
+	margin-left: 100px;
+
+	/* Align the textboxes vertically*/
+	width: 150px;
+	display: inline-block;
+}
+
+
+#text_flavor, #text_size, #text_extraToppings {
+	/* Indents the texts "Flavor", "Size" and "Extra Toppings" inside the Pizza Options fieldset*/
+	margin-left: 50px;
+}
+
+
+#text_flavor {
+	/* Adds a small space between the text "Flavor" and the dropdown list of choices to ask the user for the pizza's flavor*/
+	width: 65px;
+	display: inline-block;
+}
+
+
+#size_small {
+	/* Indents the text "Small" */
+	margin-left: 100px;
+	/* Adds an allowance space on the upper side of the radio "Small" */
+	margin-top: 5px;
+}
+
+
+#size_medium, #size_large {
+	/* Adds allowance spaces in the left sides of the radios "Medium" and "Large"*/
+	margin-left: 65px;
+}
+
+
+#toppings_bacon {
+	/* Indents the text "Bacon" */
+	margin-left: 100px;
+	/* Adds an allowance space on the upper side of the checkbox "Bacon" */
+	margin-top: 15px;
+}
+
+
+#toppings_cheese, #toppings_onion, #toppings_mushroom {
+	/* Adds allowance spaces in the left sides of the checkboxes "Cheese", "Onion" and "Mushroom" */
+	margin-left: 20px;
+}
+
+
+#delivery_details label {
+	/* Indents the texts "Delivery date:", "Preferred delivery time:" and "Delivery address:" inside the Delivery Details fieldset*/
+	margin-left: 100px;
+}
+
+
+#date {
+	/* Adds an allowance space in the left side of the date-input element */
+	margin-left: 45px;
+}
+
+
+#time {
+	/* Adds an allowance space in the left side of the time-input element */
+	margin-left: 10px;
+}
+
+
+#cus_address {
+	/* Indents the textarea*/
+	margin-left: 70px;
+
+	/* Adds an allowance space on the upper side of the textarea*/
+	margin-top: 10px;
+}
+
+
+#reset_button {
+	/* Indents the reset button */
+	margin-left: 255px;
+
+	/* Adds an allowance space on the upper and lower sides of the reset button*/
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
